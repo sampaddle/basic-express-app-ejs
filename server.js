@@ -18,7 +18,12 @@ app.set("views", __dirname + "/views");
 
 // home route
 app.get("/", function (req, res) {
-  res.render("home.ejs");
+  res.render("pages/index.ejs");
+});
+
+// about route
+app.get("/about", function (req, res) {
+  res.render("pages/about.ejs");
 });
 
 var port = 3000;
